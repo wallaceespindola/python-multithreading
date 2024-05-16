@@ -2,7 +2,7 @@
 
 # Python Multi-threading
 
-Python Multithreading tests and examples.
+Python multi-threading tests and examples.
 
 ## Installation
 
