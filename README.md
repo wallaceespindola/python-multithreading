@@ -1,6 +1,6 @@
 ![Python](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
-# Python Multithreading
+# Python Multi-threading
 
 Python Multithreading tests and examples.
 
