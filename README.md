@@ -11,7 +11,9 @@ pip install -r requirements.txt
 # Usage
 
 ```sh
-python -m python_multithreading.main_module
+python3 -m python_multithreading.main_module
+python3 -m python_multithreading.multithreading_standard
+python3 -m python_multithreading.multithreading_io
 ```
 
 # How to Run
