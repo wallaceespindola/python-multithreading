@@ -1,0 +1,8 @@
+==>name: file1.txt
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccccccccccc
+ddddddddddddddddddddddddddddd
+eeeeeeeeeeeeeeeeeeeeeeeeeeeee
+fffffffffffffffffffffffffffff
+ggggggggggggggggggggggggggggg
