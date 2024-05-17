@@ -1,2 +1,2 @@
-# Project's dependencies
+# Project dependencies
 requests==2.31.0

@@ -18,18 +18,26 @@ To run the functions:
 python3 -m python_multithreading.main_module
 python3 -m python_multithreading.multithreading_standard
 python3 -m python_multithreading.multithreading_io
+python3 -m multithreading_worker
+python3 -m multithreading_worker_counter
 ```
+![running.png](resources/running.png)
+![threadPool_worker.png](resources/threadPool_worker.png)
 
 To run all the tests in directory 'tests':
 
 ```sh
 python -m unittest discover -s tests
 ```
+![tests.png](resources/tests.png)
 
 ## Examples
 
-* [multithreading_standard.py](python_multithreading%2Fmultithreading_standard.py): It runs many standard threads.
-* [multithreading_io.py](python_multithreading%2Fmultithreading_io.py): It performs I/O operations, reading files in a multi-threading context.
+* [main_module.py](python_multithreading/main_module.py): The basic thread test.
+* [multithreading_standard.py](python_multithreading/multithreading_basic.py): It runs many standard threads.
+* [multithreading_io.py](python_multithreading/multithreading_io.py): It performs I/O operations, reading files in a multi-threading context.
+* [multithreading_worker.py](python_multithreading/multithreading_worker.py): It implements a basic ThreadPool with Workers.
+* [multithreading_worker_counter.py](python_multithreading/multithreading_worker_counter.py): A counter ThreadPool with Workers synchronizing and locking.
 
 ## Author
 
