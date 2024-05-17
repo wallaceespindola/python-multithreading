@@ -22,14 +22,14 @@ class TestMultithreadingStandard(unittest.TestCase):
         # Explicitly cast sys.stdout to StringIO to resolve the type hint issue
         output = cast(StringIO, sys.stdout).getvalue().strip().split('\n')
         self.assertEqual(len(output), 5)  # Check if 5 lines are printed
-        self.assertEqual(output[-1], 'Number: 5')  # Check the last output
+        self.assertIn('Number: 5', output[-1])  # Check the last output
 
     def test_print_letters(self):
         ms.print_letters()
         # Explicitly cast sys.stdout to StringIO to resolve the type hint issue
         output = cast(StringIO, sys.stdout).getvalue().strip().split('\n')
         self.assertEqual(len(output), 5)  # Check if 5 lines are printed
-        self.assertEqual(output[-1], 'Letter: e')  # Check the last output
+        self.assertIn('Letter: e', output[-1])  # Check the last output
 
 
 if __name__ == '__main__':

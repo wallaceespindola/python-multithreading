@@ -14,7 +14,9 @@ def read_file(file_name):
     file_path = os.path.join(base_path, '..', 'resources', file_name)
     with open(file_path, 'r') as file:
         first_line = file.readline().strip()
-        print(f"Read from {file_path}: {first_line}")
+        # Get the current thread object and its name
+        thread_name = threading.current_thread().name
+        print(f"{thread_name} read from {file_path}: {first_line}")
 
 
 def thread_function():

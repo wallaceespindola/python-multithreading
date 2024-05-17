@@ -30,7 +30,7 @@ class TestMultithreadingIO(unittest.TestCase):
 
         # Expected output line based on your read_file function's print statement
         expected_first_line = "==>name: file1.txt"  # Adjust according to actual content
-        expected_output = f"Read from {file_path}: {expected_first_line}"
+        expected_output = f"MainThread read from {file_path}: {expected_first_line}"
 
         # Assertion
         self.assertIn(expected_output, output)
@@ -64,7 +64,7 @@ class TestMultithreadingIO(unittest.TestCase):
             # In the example, it would be "file1.txt".
             extracted_filename = filename.split('/')[-1]  # getting the file name
             expected_first_line = f"==>name: {extracted_filename}"
-            expected_output = f"Read from {full_path}: {expected_first_line}"
+            expected_output = f"read from {full_path}: {expected_first_line}"
             self.assertIn(expected_output, output[i])
 
 
