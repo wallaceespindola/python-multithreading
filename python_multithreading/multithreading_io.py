@@ -5,23 +5,25 @@ import time
 
 def read_file_simulated(file_name):
     print(f"Reading {file_name}")
+    print(f"Task assigned to thread: {threading.current_thread().name}")
+    print(f"ID of process running read task: {os.getpid()}")
     time.sleep(2)  # Simulate a time-consuming read operation
     print(f"Finished reading {file_name}")
 
 
 def read_file(file_name):
-    base_path = os.path.dirname(__file__)  # gets the directory in which the script resides
-    file_path = os.path.join(base_path, '..', 'resources', file_name)
+    file_path = os.path.join(os.path.dirname(__file__), '..', 'resources', file_name)
+    relative_path = os.path.relpath(file_path, start=os.getcwd())  # The relative path from current directory
     with open(file_path, 'r') as file:
         first_line = file.readline().strip()
         # Get the current thread object and its name
         thread_name = threading.current_thread().name
-        print(f"{thread_name} read from {file_path}: {first_line}")
+        print(f"Read from {relative_path}: {first_line} - Thread: {thread_name} - ProcessID: {os.getpid()}")
 
 
 def thread_function():
     # Files to read
-    files = ['../resources/file1.txt', '../resources/file2.txt', '../resources/file3.txt']
+    files = ['file1.txt', 'file2.txt', 'file3.txt']
 
     # Creating and starting threads for each file
     threads = []

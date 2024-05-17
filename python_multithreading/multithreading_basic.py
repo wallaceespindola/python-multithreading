@@ -1,16 +1,17 @@
+import os
 import threading
 
 
 def print_numbers():
     thread_name = threading.current_thread().name
     for i in range(1, 6):
-        print(f"{thread_name} - Number: {i}")
+        print(f"Number: {i} - Thread: {thread_name} - ProcessID: {os.getpid()} ")
 
 
 def print_letters():
     thread_name = threading.current_thread().name
     for letter in 'abcde':
-        print(f"{thread_name} - Letter: {letter}")
+        print(f"Letter: {letter} - Thread: {thread_name} - ProcessID: {os.getpid()} ")
 
 
 def thread_function():
@@ -29,7 +30,7 @@ def thread_function():
 
 def main():
     """Main thread function starting."""
-    print("Running main thread function...")
+    print("Running main thread function...\n")
     thread_function()
     print(f"Threads executed.")
 

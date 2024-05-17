@@ -1,4 +1,4 @@
-==>name: file2.txt
+This is file2.txt
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 ccccccccccccccccccccccccccccc
