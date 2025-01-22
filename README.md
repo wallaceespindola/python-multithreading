@@ -2,6 +2,10 @@
 
 # Python Multi-threading
 
+![Apache 2.0 License](https://img.shields.io/badge/License-Apache2.0-orange)
+![Python](https://img.shields.io/badge/Built_with-Python-blue)
+![Pytest](https://img.shields.io/badge/Powered_by-Pytest-green)
+
 Python multi-threading tests and examples.
 
 ## Installation
