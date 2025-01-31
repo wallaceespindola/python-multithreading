@@ -14,7 +14,7 @@ Python multi-threading tests and examples.
 pip install -r requirements.txt
 ```
 
-## How to Run
+## How to run it
 
 To run the functions:
 
@@ -49,6 +49,7 @@ python -m unittest discover -s tests
 * E-mail: wallace.espindola@gmail.com
 * LinkedIn: https://www.linkedin.com/in/wallaceespindola/
 * Website: https://wtechitsolutions.com/
+* Gravatar: https://gravatar.com/wallacese
 
 ## License
 
